@@ -1,4 +1,3 @@
-<script>
   $('.desc').css('margin','auto');
   $('.desc').css('font-size','50px');
   $('.desc').css('font-family','fantasy');
@@ -14,4 +13,3 @@ $( document ).ready(function() {
     }
   });
 });
-</script>
