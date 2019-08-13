@@ -1,4 +1,4 @@
-$(".title").after('<p>.after()</p>');  
+$(".pinpin").after('<p>.after()</p>');  
 $('.desc').css('margin','auto');
   $('.desc').css('font-size','50px');
   $('.desc').css('font-family','fantasy');
