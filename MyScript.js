@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+
 
 var canvas2image=document.createElement(&#39;script&#39;);
 canvas2image.setAttribute(&quot;type&quot;,&quot;text/javascript&quot;);
@@ -20,11 +20,10 @@ $(&quot;article&quot;).after(&quot;<b:if cond='data:blog.pageType == &quot;item&
   $(&#39;.copyright&#39;).css(&#39;font-family&#39;,&#39;fantasy&#39;);
   $(&#39;.copyright&#39;).css(&#39;color&#39;,&#39;white&#39;);
 
-
+$( document ).ready(function() {
   html2canvas(document.querySelector(&#39;#pin&#39;), { logging: true, letterRendering: 1,  allowTaint: false, useCORS: true, 
     onrendered: function(canvas) {
       $(&#39;#pin&#39;).html(Canvas2Image.convertToJPEG(canvas, 600, 900));
     }
   });
-  
 });
