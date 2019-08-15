@@ -1,5 +1,4 @@
 
-$( document ).ready(function() {
   
 
 
@@ -19,4 +18,3 @@ $(&quot;article&quot;).after(&quot;<b:if cond='data:blog.pageType == &quot;item&
       $(&#39;#pin&#39;).html(Canvas2Image.convertToJPEG(canvas, 600, 900));
     }
   });
-});
