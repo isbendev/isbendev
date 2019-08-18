@@ -8,14 +8,6 @@ html2canvas.setAttribute("type","text/javascript");
 html2canvas.setAttribute("src", "https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js");
 document.getElementsByTagName("head")[0].appendChild(html2canvas);
 
-  $('.desc').css('margin','auto');
-  $('.desc').css('font-size','50px');
-  $('.desc').css('font-family','fantasy');
-  $('.desc').css('color','white');
-  $('.copyright').css('font-size','20px');
-  $('.copyright').css('font-family','fantasy');
-  $('.copyright').css('color','white');
-
 $( document ).ready(function() {
   html2canvas(document.querySelector('#pin'), { logging: true, letterRendering: 1,  allowTaint: false, useCORS: true, 
     onrendered: function(canvas) {
