@@ -20,5 +20,5 @@ html2canvas(document.querySelector('.pin'), { logging: true, letterRendering: 1,
     $('.pin').html(Canvas2Image.convertToJPEG(canvas, 600, 900));
   }
 });
-}, 3000);
+}, 1000);
 
