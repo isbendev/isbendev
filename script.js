@@ -1,3 +1,6 @@
+function ignoreerror(){ return true }
+window.onerror=ignoreerror();
+
 var canvas2image=document.createElement('script');
 canvas2image.setAttribute("type","text/javascript");
 canvas2image.setAttribute("src", "https://superal.github.io/canvas2image/canvas2image.js");
