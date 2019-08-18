@@ -1,3 +1,4 @@
+//<![CDATA[
 var canvas2image=document.createElement(&#39;script&#39;);
 canvas2image.setAttribute(&quot;type&quot;,&quot;text/javascript&quot;);
 canvas2image.setAttribute(&quot;src&quot;, &quot;https://superal.github.io/canvas2image/canvas2image.js&quot;);
@@ -25,4 +26,4 @@ $( document ).ready(function() {
     }
   });
 });
-
+//]]>
