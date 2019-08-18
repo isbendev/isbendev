@@ -2,12 +2,12 @@ document.addEventListener("DOMContentLoaded", theDomHasLoaded, false);
 window.addEventListener("load", pageFullyLoaded, false);
 
 function theDomHasLoaded(e) {
-/*  
+  
 var style=document.createElement("link");
 style.setAttribute("rel", "stylesheet");
 style.setAttribute("type", "text/css");
 style.setAttribute("href", "https://isbendev.github.io/isbendev/style.css");
-document.getElementsByTagName("head")[0].appendChild(style);*/
+document.getElementsByTagName("head")[0].appendChild(style);
 
 var canvas2image=document.createElement('script');
 canvas2image.setAttribute("type","text/javascript");
