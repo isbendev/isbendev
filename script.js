@@ -11,7 +11,7 @@ document.getElementsByTagName("head")[0].appendChild(canvas2image);
 
 var html2canvas=document.createElement('script');
 html2canvas.setAttribute("type","text/javascript");
-html2canvas.setAttribute("src", "https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js");
+html2canvas.setAttribute("src", "https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.min.js");
 document.getElementsByTagName("head")[0].appendChild(html2canvas);
 
 $( document ).ready(function() {
