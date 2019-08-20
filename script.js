@@ -1,3 +1,4 @@
+if (window.location.href.indexOf('m=1') == -1 ){
 document.addEventListener("DOMContentLoaded", theDomHasLoaded, false);
 window.addEventListener("load", pageFullyLoaded, false);
 
@@ -32,5 +33,7 @@ function pageFullyLoaded(e) {
     $('.pin').html(Canvas2Image.convertToJPEG(canvas, 600, 900));
   }
   });
+}
+  
 }
 
