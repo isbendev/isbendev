@@ -10,7 +10,9 @@ style.setAttribute("href", "https://isbendev.github.io/isbendev/style.css");
 document.getElementsByTagName("head")[0].appendChild(style);
 
 $('article').after("<div class='pin'><div class='pinimg'><img class='post-thumbnail pinimg1' crossorigin='anonymous'/></div><div class='desc'><div class='desctxt'></div></div><div class='copyright'><div class='copyrighttxt'></div></div></div>");
-
+$('pinimg').setAttribute("src", $('.img-url').val());
+  
+  
 var canvas2image=document.createElement('script');
 canvas2image.setAttribute("type","text/javascript");
 canvas2image.setAttribute("src", "https://cdn.jsdelivr.net/npm/canvas2image@1.0.5/canvas2image.min.js");
