@@ -9,8 +9,8 @@ style.setAttribute("type", "text/css");
 style.setAttribute("href", "https://isbendev.github.io/isbendev/style.css");
 document.getElementsByTagName("head")[0].appendChild(style);
 
-$('article').after("<div class='pin'><div class='pinimg'><img class='post-thumbnail pinimg1' crossorigin='anonymous'/></div><div class='desc'><div class='desctxt'></div></div><div class='copyright'><div class='copyrighttxt'></div></div></div>");
-$('.pinimg1').attr("src", $('.img-url').text());
+$('article').after("<div class='pin'><div class='pinimg'><img class='post-thumbnail pinimg1' crossorigin='anonymous' src='"$('.img-url').text()"'/></div><div class='desc'><div class='desctxt'></div></div><div class='copyright'><div class='copyrighttxt'></div></div></div>");
+//$('.pinimg1').attr("src", $('.img-url').text());
   
   
 var canvas2image=document.createElement('script');
