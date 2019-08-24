@@ -30,10 +30,9 @@ function pageFullyLoaded(e) {
     html2canvas(document.querySelector('.pin'), { logging: true, letterRendering: 1,  allowTaint: false, useCORS: true, 
   onrendered: function(canvas) {
     $('.pin').html(Canvas2Image.convertToJPEG(canvas, 600, 900));
-    $('.pin').after("<a href='http://stackoverflow.com/questions/11312923/custom-pinterest-button-for-custom-url-text-link-image-or-both' data-image='http%3A%2F%2Fcdn.sstatic.net%2Fstackexchange%2Fimg%2Flogos%2Fso%2Fso-logo.png' data-desc='Custom Pinterest button for custom URL (Text-Link, Image, or Both)' class='btnPinIt'>Custom Pin it image or text here!</a> ");
   }
   });
-  
+  $('.pin').after("<a href='http://stackoverflow.com/questions/11312923/custom-pinterest-button-for-custom-url-text-link-image-or-both' data-image='http%3A%2F%2Fcdn.sstatic.net%2Fstackexchange%2Fimg%2Flogos%2Fso%2Fso-logo.png' data-desc='Custom Pinterest button for custom URL (Text-Link, Image, or Both)' class='btnPinIt'>Custom Pin it image or text here!</a> ");
   $('.btnPinIt').click(function() {
     var url = $(this).attr('href');
     var media = $(this).attr('data-image');
