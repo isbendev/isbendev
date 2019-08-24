@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", theDomHasLoaded, false);
 window.addEventListener("load", pageFullyLoaded, false);
 
 function theDomHasLoaded(e) {
-  
 var style=document.createElement("link");
 style.setAttribute("rel", "stylesheet");
 style.setAttribute("type", "text/css");
@@ -22,8 +21,7 @@ document.getElementsByTagName("head")[0].appendChild(canvas2image);
 var html2canvas=document.createElement('script');
 html2canvas.setAttribute("type","text/javascript");
 html2canvas.setAttribute("src", "https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js");
-document.getElementsByTagName("head")[0].appendChild(html2canvas);
-  
+document.getElementsByTagName("head")[0].appendChild(html2canvas); 
 }
 
 function pageFullyLoaded(e) {
@@ -32,17 +30,5 @@ function pageFullyLoaded(e) {
     $('.pin').html(Canvas2Image.convertToJPEG(canvas, 600, 900));
   }
   });
-  $('.pin').after("<a href='http://stackoverflow.com/questions/11312923/custom-pinterest-button-for-custom-url-text-link-image-or-both' data-image='http%3A%2F%2Fcdn.sstatic.net%2Fstackexchange%2Fimg%2Flogos%2Fso%2Fso-logo.png' data-desc='Custom Pinterest button for custom URL (Text-Link, Image, or Both)' class='btnPinIt'>Custom Pin it image or text here!</a> ");
-  $('.btnPinIt').click(function() {
-    var url = $(this).attr('href');
-    var media = $(this).attr('data-image');
-    var desc = $(this).attr('data-desc');
-    window.open("//www.pinterest.com/pin/create/button/"+
-    "?url="+url+
-    "&media="+media+
-    "&description="+desc,"_blank");
-    return false;
-});
-  
 }
 
