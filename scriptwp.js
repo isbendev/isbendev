@@ -34,3 +34,14 @@ function pageFullyLoaded(e) {
   }
   });
 }
+
+$('.btnPinIt').click(function() {
+    var url = $(this).attr('href');
+    var media = $(this).attr('data-image');
+    var desc = $(this).attr('data-desc');
+    window.open("//www.pinterest.com/pin/create/button/"+
+    "?url="+url+
+    "&media="+media+
+    "&description="+desc,"_blank");
+    return false;
+});
