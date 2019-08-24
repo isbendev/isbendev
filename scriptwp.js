@@ -33,9 +33,8 @@ function pageFullyLoaded(e) {
     $('.pin').after("<a href='http://stackoverflow.com/questions/11312923/custom-pinterest-button-for-custom-url-text-link-image-or-both' data-image='http%3A%2F%2Fcdn.sstatic.net%2Fstackexchange%2Fimg%2Flogos%2Fso%2Fso-logo.png' data-desc='Custom Pinterest button for custom URL (Text-Link, Image, or Both)' class='btnPinIt'>Custom Pin it image or text here!</a> ");
   }
   });
-}
-
-$('.btnPinIt').click(function() {
+  
+  $('.btnPinIt').click(function() {
     var url = $(this).attr('href');
     var media = $(this).attr('data-image');
     var desc = $(this).attr('data-desc');
@@ -45,3 +44,6 @@ $('.btnPinIt').click(function() {
     "&description="+desc,"_blank");
     return false;
 });
+  
+}
+
