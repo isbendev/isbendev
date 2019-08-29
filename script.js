@@ -34,6 +34,8 @@ function pageFullyLoaded(e) {
   }
   });
 }
+  
+$('.pin').append("<a class='pin-art' expr:href='&quot;http://pinterest.com/pin/create/button/?url=&quot; + data:post.url + &quot;&amp;media=&quot; + data:post.firstImageUrl + &quot;&amp;description=&quot; + data:post.snippet' onclick='window.open(this.href, 'windowName', 'width=600, height=400, left=24, top=24, scrollbars, resizable'); return false;' rel='nofollow' target='_blank'><i class='fa fa-pinterest'/></a>");
 
 }
 
