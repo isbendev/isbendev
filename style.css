@@ -3,6 +3,8 @@ height:900px;
 width: 600px;
 margin: auto;
 margin-top:30px;
+border: 8px solid #fbc800;
+background-color: #fbc800;
 }
 
 .pinimg{
@@ -29,24 +31,26 @@ transform: translateY(-50%);
 text-align: center; 
 left: 10%; 
 right: 10%;
+border-width: 5px;
+border-style: solid;
 }
 
 .desc{
 height:260px;
-background-color: red;
+background-color: #ffc800;
 width: 600px;
 position: relative;
 }
 
 .copyrighttxt{
-font-size:20px;
+font-size:18px;
 font-family:fantasy;
-color:white;
+color: #858ca5;
 }
 
 .copyright{
 height:40px;
-background-color: red;
+background-color: #ffc800;
 width: 600px;
 text-align: center
 }
