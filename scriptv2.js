@@ -1,9 +1,3 @@
-if (window.location.href.indexOf('m=1') == -1 ){
-document.addEventListener("DOMContentLoaded", theDomHasLoaded, false);
-window.addEventListener("load", pageFullyLoaded, false);
-
-function theDomHasLoaded(e) {
-  
 var style=document.createElement("link");
 style.setAttribute("rel", "stylesheet");
 style.setAttribute("type", "text/css");
@@ -25,16 +19,13 @@ html2canvas.setAttribute("type","text/javascript");
 html2canvas.setAttribute("src", "https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js");
 document.getElementsByTagName("head")[0].appendChild(html2canvas);
   
-}
-
-function pageFullyLoaded(e) {
-    html2canvas(document.querySelector('.pin'), { logging: true, letterRendering: 1,  allowTaint: false, useCORS: true, 
+html2canvas(document.querySelector('.pin'), { logging: true, letterRendering: 1,  allowTaint: false, useCORS: true, 
   onrendered: function(canvas) {
     $('.pin').html(Canvas2Image.convertToJPEG(canvas, 600, 900));
     //Canvas2Image.saveAsJPEG(canvas, 600, 600);
-    $('.pin').after("<a class='pin-art' href='http://pinterest.com/pin/create/button/?url=" + window.location.href + "&amp;media=" + document.getElementById('pin').getElementsByTagName('img')[0].src + "&amp;description=h' onclick=\"window.open(this.href, 'windowName', 'width=600, height=400, left=24, top=24, scrollbars, resizable'); return false;\" rel='nofollow' target='_blank'><i class='fa fa-pinterest'/></a>");
+    //$('.pin').after("<a class='pin-art' href='http://pinterest.com/pin/create/button/?url=" + window.location.href + "&amp;media=" + document.getElementById('pin').getElementsByTagName('img')[0].src + "&amp;description=h' onclick=\"window.open(this.href, 'windowName', 'width=600, height=400, left=24, top=24, scrollbars, resizable'); return false;\" rel='nofollow' target='_blank'><i class='fa fa-pinterest'/></a>");
   }
   });
-}
+
   
-}
+
