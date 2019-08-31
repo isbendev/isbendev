@@ -18,6 +18,8 @@ var html2canvas=document.createElement('script');
 html2canvas.setAttribute("type","text/javascript");
 html2canvas.setAttribute("src", "https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js");
 document.getElementsByTagName("head")[0].appendChild(html2canvas);
+ 
+$( document ).ready(function() {
   
 html2canvas(document.querySelector('.pin'), { logging: true, letterRendering: 1,  allowTaint: false, useCORS: true, 
   onrendered: function(canvas) {
@@ -26,6 +28,9 @@ html2canvas(document.querySelector('.pin'), { logging: true, letterRendering: 1,
     //$('.pin').after("<a class='pin-art' href='http://pinterest.com/pin/create/button/?url=" + window.location.href + "&amp;media=" + document.getElementById('pin').getElementsByTagName('img')[0].src + "&amp;description=h' onclick=\"window.open(this.href, 'windowName', 'width=600, height=400, left=24, top=24, scrollbars, resizable'); return false;\" rel='nofollow' target='_blank'><i class='fa fa-pinterest'/></a>");
   }
   });
+  
+ });
+ 
 
   
 
