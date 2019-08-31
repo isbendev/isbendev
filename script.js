@@ -31,7 +31,8 @@ function pageFullyLoaded(e) {
     html2canvas(document.querySelector('.pin'), { logging: true, letterRendering: 1,  allowTaint: false, useCORS: true, 
   onrendered: function(canvas) {
     $('.pin').html(Canvas2Image.convertToJPEG(canvas, 600, 900));
-    $('.pin').after("<a class='pin-art' href='http://pinterest.com/pin/create/button/?url=" + window.location.href + "&amp;media=" + encodeURIComponent(document.getElementById('pin').firstChild.getAttribute('src')) + "&amp;description=https://2.bp.blogspot.com/-QWOAFEhHN-I/XUnCIlTUOII/AAAAAAAAAGA/7ynHZSFscIgl9eJcV5lvHNRy2A83N3eiQCK4BGAYYCw/s400/1.jpg' onclick=\"window.open(this.href, 'windowName', 'width=600, height=400, left=24, top=24, scrollbars, resizable'); return false;\" rel='nofollow' target='_blank'><i class='fa fa-pinterest'/></a>");
+    Canvas2Image.saveAsJPEG(canvas, 600, 600);
+    //$('.pin').after("<a class='pin-art' href='http://pinterest.com/pin/create/button/?url=" + window.location.href + "&amp;media=" + encodeURIComponent(document.getElementById('pin').firstChild.getAttribute('src')) + "&amp;description=https://2.bp.blogspot.com/-QWOAFEhHN-I/XUnCIlTUOII/AAAAAAAAAGA/7ynHZSFscIgl9eJcV5lvHNRy2A83N3eiQCK4BGAYYCw/s400/1.jpg' onclick=\"window.open(this.href, 'windowName', 'width=600, height=400, left=24, top=24, scrollbars, resizable'); return false;\" rel='nofollow' target='_blank'><i class='fa fa-pinterest'/></a>");
   }
   });
 }
