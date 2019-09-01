@@ -1,6 +1,6 @@
 $( document ).ready(function() {  
   
-$('article').after("<div class='pin' id='pin'><div class='pinimg'><img class='post-thumbnail pinimg1' crossorigin='anonymous'/></div><div class='desc'><div class='desctxt'></div></div><div class='copyright'><div class='copyrighttxt'></div></div></div>");
+$('.post').after("<div class='pin' id='pin'><div class='pinimg'><img class='post-thumbnail pinimg1' crossorigin='anonymous'/></div><div class='desc'><div class='desctxt'></div></div><div class='copyright'><div class='copyrighttxt'></div></div></div>");
 $('.pinimg1').attr('src',$('.img-url').text());
 $('.desctxt').text($('.article-title').text());
 $('.copyrighttxt').text($('.site-url').text());
