@@ -1,5 +1,3 @@
-$( document ).ready(function() {
-  
 var html2canvas=document.createElement('script');
 html2canvas.setAttribute("type","text/javascript");
 html2canvas.setAttribute("src", "https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js");
@@ -16,6 +14,8 @@ style.setAttribute("type", "text/css");
 style.setAttribute("href", "https://isbendev.github.io/isbendev/style.css");
 document.getElementsByTagName("head")[0].appendChild(style);
 
+$( document ).ready(function() {  
+  
 $('article').after("<div class='pin' id='pin'><div class='pinimg'><img class='post-thumbnail pinimg1' crossorigin='anonymous'/></div><div class='desc'><div class='desctxt'></div></div><div class='copyright'><div class='copyrighttxt'></div></div></div>");
 $('.pinimg1').attr('src',$('.img-url').text());
 $('.desctxt').text($('.article-title').text());
