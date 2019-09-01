@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-  
+/*  
 var style=document.createElement("link");
 style.setAttribute("rel", "stylesheet");
 style.setAttribute("type", "text/css");
@@ -14,7 +14,7 @@ document.getElementsByTagName("head")[0].appendChild(html2canvas);
 var canvas2image=document.createElement('script');
 canvas2image.setAttribute("type","text/javascript");
 canvas2image.setAttribute("src", "https://cdn.jsdelivr.net/npm/canvas2image@1.0.5/canvas2image.min.js");
-document.getElementsByTagName("head")[0].appendChild(canvas2image);
+document.getElementsByTagName("head")[0].appendChild(canvas2image); */
   
 $('article').after("<div class='pin' id='pin'><div class='pinimg'><img class='post-thumbnail pinimg1' crossorigin='anonymous'/></div><div class='desc'><div class='desctxt'></div></div><div class='copyright'><div class='copyrighttxt'></div></div></div>");
 $('.pinimg1').attr('src',$('.img-url').text());
