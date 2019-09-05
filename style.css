@@ -22,7 +22,7 @@ width: 600px;
 margin:auto;
 font-size:40px;
 font-family:fantasy;
-color:white;
+color:red;
 margin: 0; 
 position: absolute; 
 top: 40%; 
@@ -33,7 +33,7 @@ left: 5%;
 right: 5%;
 border-width: 5px;
 border-style: solid;
-background: #DCDCDC;
+background: #fff;
 }
 
 .desc{
