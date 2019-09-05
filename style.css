@@ -3,13 +3,13 @@ height:900px;
 width: 600px;
 margin: auto;
 margin-top:30px;
-border: 5px solid #fbc800;
-background-color: #fbc800;
+border: 5px solid red;
+background-color: red;
 }
 
 .pinimg{
 height:600px;
-background-color: blue;
+background-color: red;
 width: 600px;
 }
 
@@ -37,7 +37,7 @@ border-style: solid;
 
 .desc{
 height:260px;
-background-color: #ffc800;
+background-color: red;
 width: 600px;
 position: relative;
 }
@@ -50,7 +50,7 @@ color: #858ca5;
 
 .copyright{
 height:40px;
-background-color: #ffc800;
+background-color: red;
 width: 600px;
 text-align: center
 }
