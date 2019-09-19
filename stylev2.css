@@ -1,20 +1,20 @@
 .pin{
 height: 900px;
 width: 600px;
-padding : 20px;
+padding : 10px;
 margin-top: 30px;
 background-color: red;
 }
 
 .pinimg{
-height: 560px;
-width: 560px;
+height: 580px;
+width: 580px;
 background-color: red;
 }
 
 .pinimg1{
-height:560px;
-width: 560px;
+height:580px;
+width: 580px;
 }
 
 .desctxt{
@@ -29,18 +29,13 @@ top: 40%;
 -ms-transform: translateY(-40%); 
 transform: translateY(-40%);
 text-align: center; 
-left: 5%; 
-right: 5%;
-border-width: 5px;
-border-style: solid;
-background: red;
 z-index: 9999;
 }
 
 .desc{
-height:250px;
+height:200px;
+width: 580px;
 background-color: red;
-width: 600px;
 position: relative;
 }
 
@@ -53,6 +48,6 @@ color: #fff;
 .copyright{
 height:50px;
 background-color: red;
-width: 600px;
+width: 580px;
 text-align: center
 }
