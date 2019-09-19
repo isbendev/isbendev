@@ -1,21 +1,20 @@
 .pin{
-height:900px;
+height: 900px;
 width: 600px;
 margin: auto;
-margin-top:30px;
-border: 1px solid red;
+margin-top: 30px;
 background-color: red;
 }
 
 .pinimg{
-height:600px;
-width: 600px;
+height: 550px;
+width: 550px;
 background-color: red;
 }
 
 .pinimg1{
-height:600px;
-width: 600px;
+height:550px;
+width: 550px;
 }
 
 .desctxt{
