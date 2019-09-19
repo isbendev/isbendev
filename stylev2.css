@@ -1,6 +1,6 @@
 .pin{
-height:890px;
-width: 590px;
+height:900px;
+width: 600px;
 margin: auto;
 margin-top:30px;
 border: 5px solid red;
@@ -8,14 +8,14 @@ background-color: red;
 }
 
 .pinimg{
-height:590px;
+height:600px;
+width: 600px;
 background-color: red;
-width: 590px;
 }
 
 .pinimg1{
-height:590px;
-width: 590px;
+height:600px;
+width: 600px;
 }
 
 .desctxt{
@@ -41,7 +41,7 @@ z-index: 9999;
 .desc{
 height:250px;
 background-color: red;
-width: 590px;
+width: 600px;
 position: relative;
 }
 
@@ -54,6 +54,6 @@ color: #fff;
 .copyright{
 height:50px;
 background-color: red;
-width: 590px;
+width: 600px;
 text-align: center
 }
