@@ -24,14 +24,12 @@ font-family: 'Acme', sans-serif;
 color: white;
 z-index: 9999;
 margin: 0;
-position: absolute;
-transform: translate(0%, 10%);
+padding-top: 20px;
 }
 
 .desc{
 height: 200px;
 width: 580px;
-position: relative;
 text-align: center;
 }
 
