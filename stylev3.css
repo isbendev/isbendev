@@ -9,13 +9,13 @@ background-color: red;
 
 .pinimg{
 height:420px;
-width: 600px;
+width: 590px;
 background-color: red;
 }
 
 .pinimg1{
 height:420px;
-width: 600px;
+width: 590px;
 }
 
 .desctxt{
@@ -41,7 +41,7 @@ z-index: 9999;
 .desc{
 height:350px;
 background-color: red;
-width: 600px;
+width: 590px;
 position: relative;
 }
 
@@ -54,6 +54,6 @@ color: #fff;
 .copyright{
 height:50px;
 background-color: red;
-width: 600px;
+width: 590px;
 text-align: center
 }
