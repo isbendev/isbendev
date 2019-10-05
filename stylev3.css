@@ -9,12 +9,12 @@ background-color: red;
 
 .pinimg{
 height:600px;
-width: 600px;
+width: 420px;
 background-color: red;
 }
 
 .pinimg1{
-height:600px;
+height:420px;
 width: 600px;
 }
 
@@ -39,7 +39,7 @@ z-index: 9999;
 }
 
 .desc{
-height:250px;
+height:350px;
 background-color: red;
 width: 600px;
 position: relative;
