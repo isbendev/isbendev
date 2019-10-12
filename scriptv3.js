@@ -1,6 +1,6 @@
 $( document ).ready(function() {  
   
-$('#related-posts').before("<div class='pin' id='pin'><div class='pinimg'><img class='post-thumbnail pinimg1' crossorigin='anonymous'/></div><div class='desc'><div class='desctxt'></div></div><div class='copyright'><div class='copyrighttxt'></div></div><div class='pinimg'><img class='post-thumbnail pinimg1' crossorigin='anonymous'/></div></div>");
+$('#related-posts').before("<div class='pin' id='pin'><div class='pinimg'><img class='post-thumbnail pinimg1' crossorigin='anonymous'/></div><div class='pinimg'><img class='post-thumbnail pinimg1' crossorigin='anonymous'/></div><div class='desc'><div class='desctxt'></div></div><div class='copyright'><div class='copyrighttxt'></div></div></div>");
 
 $('.pinimg1').attr('src',$('.img-url').text());
 $('.desctxt').text($('.article-title').text());
