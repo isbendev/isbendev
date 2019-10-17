@@ -26,10 +26,10 @@
     color: white;
     margin: 0;
     text-align: center;
-    left: 5%;
+    /* left: 5%;
     right: 5%;
     border-width: 5px;
-    border-style: solid;
+    border-style: solid; */
     background: red;
     z-index: 9999;
 }
