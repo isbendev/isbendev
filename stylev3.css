@@ -1,6 +1,6 @@
 .pin{
-  height:1260px;
-  width: 600px;
+  height:1500px;
+  width: 735px;
   margin: auto;
   margin-top:30px;
   border: 5px solid red;
@@ -10,13 +10,13 @@
 
 .pinimg{
   height:625px;
-  width: 590px;
+  width: 725px;
   background-color: red;
 }
 
 .pinimg1{
   height:625px;
-  width: 590px;
+  width: 725px;
 }
 
 .desctxt{
