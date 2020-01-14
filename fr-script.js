@@ -9,6 +9,12 @@ style.setAttribute("rel", "stylesheet");
 style.setAttribute("type", "text/css");
 style.setAttribute("href", "https://isbendev.github.io/isbendev/fr-style.css");
 document.getElementsByTagName("head")[0].appendChild(style);
+
+var link = document.createElement('link');
+link.setAttribute('rel', 'stylesheet');
+link.setAttribute('type', 'text/css');
+link.setAttribute('href', 'https://fonts.googleapis.com/css?family=Seymour+One&amp;display=swap');
+document.head.appendChild(link);
   
 $('article').after("<div class='pin' id='pin'><img src='https://isbendev.github.io/isbendev/img.png' class='imgchef'/><div class='pinimg'><img class='post-thumbnail pinimg1' crossorigin='anonymous'/></div><div class='desc'><div class='desctxt'></div></div><div class='copyright'><div class='copyrighttxt'></div></div></div>");
 $('.pinimg1').attr('src',$('.img-url').text());
