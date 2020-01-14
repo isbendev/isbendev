@@ -12,7 +12,6 @@ document.getElementsByTagName("head")[0].appendChild(style);
 
 var link = document.createElement('link');
 link.setAttribute('rel', 'stylesheet');
-link.setAttribute('type', 'text/css');
 link.setAttribute('href', 'https://fonts.googleapis.com/css?family=Seymour+One&amp;display=swap');
 document.head.appendChild(link);
   
@@ -37,7 +36,6 @@ function pageFullyLoaded(e) {
     html2canvas(document.querySelector('.pin'), { logging: true, letterRendering: 1,  allowTaint: false, useCORS: true, 
   onrendered: function(canvas) {
     $('.pin').html(Canvas2Image.convertToJPEG(canvas, 600, 900));
-    //Canvas2Image.saveAsJPEG(canvas, 600, 600);
   }
   });
 }
