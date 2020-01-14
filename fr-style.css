@@ -41,7 +41,7 @@ z-index: 9999;
 .desc{
 height:250px;
 background-color: red;
-width: 600px;
+width: 400px;
 position: relative;
 }
 
@@ -54,6 +54,6 @@ color: #fff;
 .copyright{
 height:50px;
 background-color: red;
-width: 600px;
+width: 400px;
 text-align: center
 }
