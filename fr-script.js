@@ -42,4 +42,6 @@ function pageFullyLoaded(e) {
   });
 }
   
+}else{
+  $('.content-post').first().find('img').first().remove();
 }
