@@ -3,8 +3,6 @@ document.addEventListener("DOMContentLoaded", theDomHasLoaded, false);
 window.addEventListener("load", pageFullyLoaded, false);
 
 function theDomHasLoaded(e) {
-
-$('.content-post').first().find('img').first().remove();
   
 var style=document.createElement("link");
 style.setAttribute("rel", "stylesheet");
