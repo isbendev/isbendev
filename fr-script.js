@@ -17,7 +17,7 @@ document.head.appendChild(link);
 
 $('.content-post').first().find('img').first().remove();
   
-$('article').after("<div class='pin' id='pin'><img src='https://isbendev.github.io/isbendev/img.png' class='imgchef'/><div class='pinimg'><img class='post-thumbnail pinimg1' crossorigin='anonymous'/></div><div class='desc'><div class='desctxt'></div></div><div class='copyright'><div class='copyrighttxt'></div></div></div>");
+$('.hentry').after("<div class='pin' id='pin'><img src='https://isbendev.github.io/isbendev/img.png' class='imgchef'/><div class='pinimg'><img class='post-thumbnail pinimg1' crossorigin='anonymous'/></div><div class='desc'><div class='desctxt'></div></div><div class='copyright'><div class='copyrighttxt'></div></div></div>");
 $('.pinimg1').attr('src',$('.img-url').text());
 $('.desctxt').text($('.article-title').text());
 $('.copyrighttxt').text($('.site-url').text());
