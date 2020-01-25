@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", theDomHasLoaded, false);
 window.addEventListener("load", pageFullyLoaded, false);
 
 function theDomHasLoaded(e) {
+
+$('.content-post').first().find('img').first().remove();
   
 var style=document.createElement("link");
 style.setAttribute("rel", "stylesheet");
@@ -14,8 +16,6 @@ var link = document.createElement('link');
 link.setAttribute('rel', 'stylesheet');
 link.setAttribute('href', 'https://fonts.googleapis.com/css?family=Seymour+One&amp;display=swap');
 document.head.appendChild(link);
-
-$('.content-post').first().find('img').first().remove();
   
 $('.hentry').after("<div class='pin' id='pin'><img src='https://isbendev.github.io/isbendev/img.png' class='imgchef'/><div class='pinimg'><img class='post-thumbnail pinimg1' crossorigin='anonymous'/></div><div class='desc'><div class='desctxt'></div></div><div class='copyright'><div class='copyrighttxt'></div></div></div>");
 $('.pinimg1').attr('src',$('.img-url').text());
