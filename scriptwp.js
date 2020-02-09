@@ -26,7 +26,7 @@ $( document ).ready(function() {
   
   html2canvas(document.querySelector('.pin'), { logging: true, letterRendering: 1,  allowTaint: false, useCORS: true, 
   onrendered: function(canvas) {
-    $('.pin').html(Canvas2Image.convertToJPEG(canvas, 600, 900));
+    $('.pin').html(Canvas2Image.convertToJPEG(canvas, 600, 900)); 
     }
   });
   
