@@ -25,6 +25,7 @@ width: 600px;
     position: absolute;
     z-index: 99999;
     right: 89px;
+    visibility:hidden;
 }
 
 .desctxt{
