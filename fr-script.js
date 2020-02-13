@@ -19,6 +19,9 @@ $('.hentry').after("<div class='pin' id='pin'><img src='https://isbendev.github.
 $('.pinimg1').attr('src',$('.img-url').text());
 $('.desctxt').text($('.article-title').text());
 $('.copyrighttxt').text($('.site-url').text());
+if (window.location.href.indexOf('www2') == -1 ){
+  $(".imgchef").css("visibility", "hidden");
+}
   
 var canvas2image=document.createElement('script');
 canvas2image.setAttribute("type","text/javascript");
