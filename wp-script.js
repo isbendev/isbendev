@@ -1,10 +1,11 @@
-document.addEventListener("DOMContentLoaded", function(event){
 
 var jquery=document.createElement('script');
 canvas2image.setAttribute("type","text/javascript");
 canvas2image.setAttribute("src", "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js");
-document.getElementsByTagName("head")[0].appendChild(jquery);  
-  
+document.getElementsByTagName("head")[0].appendChild(jquery); 
+
+document.addEventListener("DOMContentLoaded", function(event){
+
 var html2canvas=document.createElement('script');
 html2canvas.setAttribute("type","text/javascript");
 html2canvas.setAttribute("src", "https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js");
