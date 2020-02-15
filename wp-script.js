@@ -1,12 +1,4 @@
-var html2canvas=document.createElement('script');
-html2canvas.setAttribute("type","text/javascript");
-html2canvas.setAttribute("src", "https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js");
-document.getElementsByTagName("head")[0].appendChild(html2canvas); 
 
-var canvas2image=document.createElement('script');
-canvas2image.setAttribute("type","text/javascript");
-canvas2image.setAttribute("src", "https://cdn.jsdelivr.net/npm/canvas2image@1.0.5/canvas2image.min.js");
-document.getElementsByTagName("head")[0].appendChild(canvas2image);
 
 var style=document.createElement("link");
 style.setAttribute("rel", "stylesheet");
@@ -20,6 +12,17 @@ $('.desctxt').text($('.article-title').text());
 $('.copyrighttxt').text($('.site-url').text());
 
 document.addEventListener("DOMContentLoaded", function(event){
+  
+var html2canvas=document.createElement('script');
+html2canvas.setAttribute("type","text/javascript");
+html2canvas.setAttribute("src", "https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js");
+document.getElementsByTagName("head")[0].appendChild(html2canvas); 
+
+var canvas2image=document.createElement('script');
+canvas2image.setAttribute("type","text/javascript");
+canvas2image.setAttribute("src", "https://cdn.jsdelivr.net/npm/canvas2image@1.0.5/canvas2image.min.js");
+document.getElementsByTagName("head")[0].appendChild(canvas2image);
+  
   html2canvas(document.querySelector('.pin'), { logging: true, letterRendering: 1,  allowTaint: false, useCORS: true, 
   onrendered: function(canvas) {
     $('.pin').html(Canvas2Image.convertToJPEG(canvas, 600, 900)); 
