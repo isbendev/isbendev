@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function(event){
 
 var html2canvas=document.createElement('script');
 html2canvas.setAttribute("type","text/javascript");
-html2canvas.setAttribute("src", "https://github.com/niklasvh/html2canvas/releases/download/v1.0.0-alpha.8/html2canvas.js");
+html2canvas.setAttribute("src", "https://html2canvas.hertzen.com/dist/html2canvas.min.js");
 document.getElementsByTagName("head")[0].appendChild(html2canvas); 
 
 var canvas2image=document.createElement('script');
