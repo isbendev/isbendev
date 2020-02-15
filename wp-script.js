@@ -1,16 +1,3 @@
-
-
-var style=document.createElement("link");
-style.setAttribute("rel", "stylesheet");
-style.setAttribute("type", "text/css");
-style.setAttribute("href", "https://isbendev.github.io/isbendev/wp-style.css");
-document.getElementsByTagName("head")[0].appendChild(style);
-
-$('.vce-related-box').prepend("<div class='pin'><div class='pinimg'><img class='post-thumbnail pinimg1' crossorigin='anonymous'/></div><div class='desc'><div class='desctxt'></div></div><div class='copyright'><div class='copyrighttxt'></div></div></div>");
-$('.pinimg1').attr('src',$('.img-url').text());
-$('.desctxt').text($('.article-title').text());
-$('.copyrighttxt').text($('.site-url').text());
-
 document.addEventListener("DOMContentLoaded", function(event){
   
 var html2canvas=document.createElement('script');
@@ -22,6 +9,17 @@ var canvas2image=document.createElement('script');
 canvas2image.setAttribute("type","text/javascript");
 canvas2image.setAttribute("src", "https://cdn.jsdelivr.net/npm/canvas2image@1.0.5/canvas2image.min.js");
 document.getElementsByTagName("head")[0].appendChild(canvas2image);
+  
+var style=document.createElement("link");
+style.setAttribute("rel", "stylesheet");
+style.setAttribute("type", "text/css");
+style.setAttribute("href", "https://isbendev.github.io/isbendev/wp-style.css");
+document.getElementsByTagName("head")[0].appendChild(style);
+
+$('.vce-related-box').prepend("<div class='pin'><div class='pinimg'><img class='post-thumbnail pinimg1' crossorigin='anonymous'/></div><div class='desc'><div class='desctxt'></div></div><div class='copyright'><div class='copyrighttxt'></div></div></div>");
+$('.pinimg1').attr('src',$('.img-url').text());
+$('.desctxt').text($('.article-title').text());
+$('.copyrighttxt').text($('.site-url').text());
   
   html2canvas(document.querySelector('.pin'), { logging: true, letterRendering: 1,  allowTaint: false, useCORS: true, 
   onrendered: function(canvas) {
