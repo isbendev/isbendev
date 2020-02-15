@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function(event){
 
-var canvas2image=document.createElement('script');
+var jquery=document.createElement('script');
 canvas2image.setAttribute("type","text/javascript");
 canvas2image.setAttribute("src", "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js");
-document.getElementsByTagName("head")[0].appendChild(canvas2image);  
+document.getElementsByTagName("head")[0].appendChild(jquery);  
   
 var html2canvas=document.createElement('script');
 html2canvas.setAttribute("type","text/javascript");
