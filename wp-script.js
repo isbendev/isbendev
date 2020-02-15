@@ -17,7 +17,7 @@ document.getElementsByTagName("head")[0].appendChild(html2canvas);
 */
 
 document.addEventListener("DOMContentLoaded", function(event){
-  $('.vce-related-box').prepend("<div class='pin'><div class='pinimg'><img class='post-thumbnail pinimg1' crossorigin='anonymous'/></div><div class='desc'><div class='desctxt'></div></div><div class='copyright'><div class='copyrighttxt'></div></div></div>");
+  $('.entry-title').prepend("<div class='pin'><div class='pinimg'><img class='post-thumbnail pinimg1' crossorigin='anonymous'/></div><div class='desc'><div class='desctxt'></div></div><div class='copyright'><div class='copyrighttxt'></div></div></div>");
   $('.pinimg1').attr('src',$('.img-url').text());
   $('.desctxt').text($('.article-title').text());
   $('.copyrighttxt').text($('.site-url').text());
