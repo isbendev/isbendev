@@ -1,9 +1,5 @@
 /*
-var style=document.createElement("link");
-style.setAttribute("rel", "stylesheet");
-style.setAttribute("type", "text/css");
-style.setAttribute("href", "https://isbendev.github.io/isbendev/style.css");
-document.getElementsByTagName("head")[0].appendChild(style);
+
   
 var canvas2image=document.createElement('script');
 canvas2image.setAttribute("type","text/javascript");
@@ -17,6 +13,13 @@ document.getElementsByTagName("head")[0].appendChild(html2canvas);
 */
 
 document.addEventListener("DOMContentLoaded", function(event){
+  
+  var style=document.createElement("link");
+  style.setAttribute("rel", "stylesheet");
+  style.setAttribute("type", "text/css");
+  style.setAttribute("href", "https://isbendev.github.io/isbendev/wp-style.css");
+  document.getElementsByTagName("head")[0].appendChild(style);
+  
   $('.entry-title').prepend("<div class='pin'><div class='pinimg'><img class='post-thumbnail pinimg1' crossorigin='anonymous'/></div><div class='desc'><div class='desctxt'></div></div><div class='copyright'><div class='copyrighttxt'></div></div></div>");
   //$('.pinimg1').attr('src',$('.img-url').text());
   //$('.desctxt').text($('.article-title').text());
