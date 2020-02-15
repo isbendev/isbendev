@@ -48,7 +48,6 @@ z-index: 9999;
 .desc{
 height:250px;
 background-color: red;
-width: 600px;
 position: relative;
 font-family: 'Anton', sans-serif;
 }
@@ -62,6 +61,5 @@ color: #fff;
 .copyright{
 height:50px;
 background-color: red;
-width: 600px;
 text-align: center
 }
