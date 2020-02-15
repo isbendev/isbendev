@@ -21,7 +21,7 @@ $('.pinimg1').attr('src',$('.img-url').text());
 $('.desctxt').text($('.article-title').text());
 $('.copyrighttxt').text($('.site-url').text());
 
-
+/*
 $( document ).ready(function() { 
   
   html2canvas(document.querySelector('.pin'), { logging: true, letterRendering: 1,  allowTaint: false, useCORS: true, 
@@ -31,4 +31,4 @@ $( document ).ready(function() {
   });
   
 });
-
+*/
