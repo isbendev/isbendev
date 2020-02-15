@@ -20,22 +20,9 @@ $('.desctxt').text($('.article-title').text());
 $('.copyrighttxt').text($('.site-url').text());
 
 document.addEventListener("DOMContentLoaded", function(event){
-
   html2canvas(document.querySelector('.pin'), { logging: true, letterRendering: 1,  allowTaint: false, useCORS: true, 
   onrendered: function(canvas) {
     $('.pin').html(Canvas2Image.convertToJPEG(canvas, 600, 900)); 
     }
   });
-  
 });
-
-
-
-
-/*
-$( document ).ready(function() { 
-  
-
-  
-});
-*/
