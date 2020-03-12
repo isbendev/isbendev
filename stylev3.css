@@ -10,13 +10,13 @@
 
 .pinimg{
   height:700px;
-  width: 725px;
+  width: 735px;
   background-color: red;
 }
 
 .pinimg1{
   height:700px;
-  width: 725px;
+  width: 735px;
 }
 
 .desctxt{
@@ -26,10 +26,6 @@
     color: white;
     margin: 0;
     text-align: center;
-    /* left: 5%;
-    right: 5%;
-    border-width: 5px;
-    border-style: solid; */
     background: red;
     z-index: 9999;
 }
