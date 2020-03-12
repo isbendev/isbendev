@@ -32,7 +32,6 @@
 
 .desc{
     background-color: red;
-    width: 735px;
     position: relative;
     position: absolute;
     top: 45%;
@@ -49,7 +48,6 @@
 .copyright{
     bottom: 0px;
     background-color: red;
-    width: 725px;
     text-align: center;
     position: absolute;
 }
