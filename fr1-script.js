@@ -1,4 +1,4 @@
-if (window.location.href.indexOf('?fullpost') == -1 ){
+if (window.location.href.indexOf('?fullpost') != -1 ){
 document.addEventListener("DOMContentLoaded", theDomHasLoaded, false);
 window.addEventListener("load", pageFullyLoaded, false);
 
