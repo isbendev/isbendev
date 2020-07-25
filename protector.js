@@ -1,4 +1,4 @@
-var cookieName = "ismail";
+var cookieName = "ads_protector";
 var serveDelay = 3000;
 var cookieHours = 1;
 var clickCount = 1;
