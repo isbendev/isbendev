@@ -1,3 +1,8 @@
+var cookieName = "ismail";
+var serveDelay = 3000;
+var cookieHours = 1;
+var clickCount = 1;
+
 function aicpCookieGet(cname) {
 	var name = cname + "=";
 	var decodedCookie = decodeURIComponent(document.cookie);
@@ -45,10 +50,6 @@ function aicpServeAds(delay) {
 	}, delay);
 }
 
-var cookieName = aicpConfig.cookie;
-var serveDelay = parseInt(aicpConfig.delay);
-var cookieHours = parseInt(aicpConfig.duration);
-var clickCount = parseInt(aicpConfig.limit);
 
 var aicpcook = aicpCookieGet(cookieName);
 aicpCookieCheck(aicpcook, clickCount, serveDelay);
