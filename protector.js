@@ -1,4 +1,3 @@
-
 function aicpCookieGet(cname) {
 	var name = cname + "=";
 	var decodedCookie = decodeURIComponent(document.cookie);
@@ -17,7 +16,7 @@ function aicpCookieGet(cname) {
 
 function aicpCookieSet(cname,cvalue,exhours) {
 	var d = new Date();
-	d.setTime(d.getTime() + (exhours*60*1000));
+	d.setTime(d.getTime() + (exhours*60*60*1000));
 	var expires = "expires=" + d.toGMTString();
 	document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";	
 }
