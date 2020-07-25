@@ -1,7 +1,7 @@
 var cookieName = "ads_protector1";
 var serveDelay = 3000;
 var cookieHours = 1;
-var clickCount = 2;
+var clickCount = 5;
 
 function aicpCookieGet(cname) {
 	var name = cname + "=";
@@ -21,7 +21,7 @@ function aicpCookieGet(cname) {
 
 function aicpCookieSet(cname,cvalue,exhours) {
 	var d = new Date();
-	d.setTime(d.getTime() + (exhours*60*60*1000));
+	d.setTime(d.getTime() + (exhours*60*1000));
 	var expires = "expires=" + d.toGMTString();
 	document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";	
 }
