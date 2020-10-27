@@ -28,6 +28,7 @@
     text-align: center;
     background: red;
     z-index: 9999;
+    line-height: normal;
 }
 
 .desc{
