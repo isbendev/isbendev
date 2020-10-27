@@ -31,7 +31,6 @@ html2canvas.setAttribute("src", "https://cdnjs.cloudflare.com/ajax/libs/html2can
 document.getElementsByTagName("head")[0].appendChild(html2canvas);
 
 }
-/*
 function pageFullyLoaded(e) {
     html2canvas(document.querySelector('.pin'), { logging: true, letterRendering: 1,  allowTaint: false, useCORS: true, 
   onrendered: function(canvas) {
@@ -39,7 +38,6 @@ function pageFullyLoaded(e) {
   }
   });
 }
-  */
 }else{
   $('.content-post').first().find('img').first().remove();
 }
