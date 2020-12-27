@@ -62,7 +62,7 @@ setInterval( function() {
 			if (!countnow) { countnow = 0; }
 			countnow++;
 			if (countnow >= clickCount) {
-				aicpHideAds();
+				//aicpHideAds();
 			}
 			aicpCookieSet(cookieName, countnow + " click", cookieHours); 
 			document.activeElement.blur();
