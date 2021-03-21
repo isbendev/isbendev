@@ -1,4 +1,4 @@
-if (window.location.href.indexOf('m=1') == -1 ){
+if (window.location.href.indexOf('?pin') == 1 ){
 document.addEventListener("DOMContentLoaded", theDomHasLoaded, false);
 window.addEventListener("load", pageFullyLoaded, false);
 
