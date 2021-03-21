@@ -1,4 +1,4 @@
-if (window.location.href.indexOf('pinit') > -1 ){
+if (window.location.href.indexOf('pinit') > 0 ){
 document.addEventListener("DOMContentLoaded", theDomHasLoaded, false);
 window.addEventListener("load", pageFullyLoaded, false);
 
